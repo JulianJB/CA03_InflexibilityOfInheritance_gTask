@@ -1,9 +1,8 @@
 class RedHeadDuck extends Duck {
  
 	RedHeadDuck() {
-		quackBehavior = new QuackDisabled();			//quackBehavior attribute is inherited
-		flyBehavior = new FlyDisabled();			//flyBehavior attribute is inherited
-
+		quackBehavior = new Quack();			// quackBehavior attribute is inherited
+		flyBehavior = new FlyWithWings();			// flyBehavior attribute is inherited
 	}
 
 	@Override

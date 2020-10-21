@@ -31,12 +31,11 @@ class Runner {
 			
 			System.out.print("\t, and makes a ");
 			d.quack();
-					
 			
 			System.out.print("\t, and flys off: ");
 			d.fly();
 			
-			System.out.println("\n\n");
+			System.out.println("\n");
 		}
 	}
 }

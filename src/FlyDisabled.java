@@ -1,7 +1,7 @@
 class FlyDisabled implements FlyBehavior {
 	
 	FlyDisabled() {
-		System.out.println("\t with a "+this.getClass().getName());
+		System.out.println("\t with a " + this.getClass().getName());
 	}
 
 	@Override
