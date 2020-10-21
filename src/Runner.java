@@ -9,8 +9,8 @@ class Runner {
 		System.out.println("On display today...");
 		Duck[] ducks = new Duck[] { new RedHeadDuck(),
 									new MallardDuck(),
-									//new RubberDuck(),	
-									//new DecoyDuck(), 	
+									new RubberDuck(),
+									new DecoyDuck(),
 									};
 		System.out.println();
 		demonstrateDucks(ducks);
@@ -35,7 +35,7 @@ class Runner {
 			System.out.print("\t, and flys off: ");
 			d.fly();
 			
-			System.out.println("\n");
+			System.out.println();
 		}
 	}
 }

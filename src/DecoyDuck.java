@@ -4,8 +4,10 @@
 class DecoyDuck extends Duck {
 	
 	DecoyDuck() {
-		quackBehavior = new QuackDisabled();
-		flyBehavior = new FlyDisabled();
+		//quackBehavior = new QuackDisabled();
+		//flyBehavior = new FlyDisabled();
+		quackBehavior = new MuteQuack();
+		flyBehavior = new FlyNoWay();
 	}
 
 	@Override
