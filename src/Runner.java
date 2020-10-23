@@ -11,6 +11,7 @@ class Runner {
 									new MallardDuck(),
 									new RubberDuck(),
 									new DecoyDuck(),
+									new ModelDuck(),
 									};
 		System.out.println();
 		demonstrateDucks(ducks);
@@ -33,6 +34,11 @@ class Runner {
 			d.quack();
 			
 			System.out.print("\t, and flys off: ");
+			d.fly();
+
+			// Dynamically setting the fly behavior for the ducks: allows runtime change of strategy
+			System.out.print("\t, but now flys");
+			d.setFlyBehavior(new FlyWithRocket());
 			d.fly();
 			
 			System.out.println();

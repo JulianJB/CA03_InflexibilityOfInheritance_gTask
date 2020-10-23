@@ -20,6 +20,16 @@ abstract class Duck {
 	void quack() {
 		quackBehavior.quack();	// "delegation"
 	}
+
+	// Setting the fly behavior dynamically
+	void setFlyBehavior(FlyBehavior flyBehavior) {
+ 		this.flyBehavior = flyBehavior;
+	}
+
+	// Setting the quack behavior dynamically
+	void setQuackBehavior(QuackBehavior quackBehavior) {
+ 		this.quackBehavior = quackBehavior;
+	}
  
 	// "abstract" keyword forces subclasses to implement a display
 	abstract void display();
